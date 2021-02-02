@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
-import ZafaContext from './ZafaContext';
+
+const ZafaContext = React.createContext({logged: false, setLogged: ()=>{}})
+
 
 const ZafaWrapper = ({children}) => {
     const [logged, setLogged] = useState(false)
@@ -13,4 +15,4 @@ const ZafaWrapper = ({children}) => {
     )
 }
 
-export default ZafaWrapper;
+export {ZafaWrapper, ZafaContext};

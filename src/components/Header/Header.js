@@ -1,6 +1,6 @@
 import React, { useContext } from 'react';
 import { Button } from 'react-bootstrap';
-import ZafaContext from '../../context/ZafaContext';
+import {ZafaContext} from '../../context/ZafaWrapper';
 
 const Header = () => {
 
